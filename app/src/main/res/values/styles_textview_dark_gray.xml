@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--Regular-->
+    <style name="TextStyle.Regular.DarkGray">
+        <item name="android:textColor">@color/dark_gray</item>
+    </style>
+
+    <style name="TextStyle.Regular.DarkGray.14sp">
+        <item name="android:textSize">@dimen/font_size_medium</item>
+    </style>
+    <!--/Regular-->
+
+    <!--Medium-->
+    <style name="TextStyle.Medium.DarkGray">
+        <item name="android:textColor">@color/dark_gray</item>
+    </style>
+
+    <style name="TextStyle.Medium.DarkGray.18sp">
+        <item name="android:textSize">@dimen/font_size_large</item>
+    </style>
+    <!--/Medium-->
+
+</resources>
