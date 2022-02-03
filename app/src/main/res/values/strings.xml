@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">PictureOfTheDay</string>
+
+    <string name="daily_image">Daily Image</string>
+
+    <string name="search_wiki">Search in Wiki</string>
+    <string name="wiki_helper_text">Search in wikipedia</string>
+
+</resources>
