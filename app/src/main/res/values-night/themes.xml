@@ -13,4 +13,35 @@
         <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
         <!-- Customize your theme here. -->
     </style>
+
+    <!-- Moon application theme. -->
+    <style name="Theme.PictureOfTheDay.Moon" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/primary_moon_night</item>
+        <item name="colorPrimaryVariant">@color/dark_primary_moon_night</item>
+        <item name="colorOnPrimary">@color/black</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/secondary_moon</item>
+        <item name="colorSecondaryVariant">@color/dark_secondary_moon</item>
+        <item name="colorOnSecondary">@color/black</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
+
+    </style>
+
+    <!-- Sun application theme. -->
+    <style name="Theme.PictureOfTheDay.Sun" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/primary_sun_night</item>
+        <item name="colorPrimaryVariant">@color/dark_primary_sun_night</item>
+        <item name="colorOnPrimary">@color/black</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/secondary_sun</item>
+        <item name="colorSecondaryVariant">@color/dark_secondary_sun</item>
+        <item name="colorOnSecondary">@color/black</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
+
+    </style>
+
 </resources>
