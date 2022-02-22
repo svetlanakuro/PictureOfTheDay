@@ -42,10 +42,12 @@ class SettingsFragment : Fragment() {
         view.findViewById<View>(R.id.radio_button_moon_theme).setOnClickListener {
             appThemeSaved.setMoonTheme(context)
             requireActivity().recreate()
+            requireActivity().onBackPressed()
         }
         view.findViewById<View>(R.id.radio_button_sun_theme).setOnClickListener {
             appThemeSaved.setSunTheme(context)
             requireActivity().recreate()
+            requireActivity().onBackPressed()
         }
     }
 }

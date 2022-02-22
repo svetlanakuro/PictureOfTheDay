@@ -12,15 +12,15 @@
 
     <color name="primary_moon">#62727b</color>
     <color name="dark_primary_moon">#102027</color>
-    <color name="primary_moon_night">#8eacbb</color>
-    <color name="dark_primary_moon_night">#34515e</color>
-    <color name="secondary_moon">#c1d5e0</color>
-    <color name="dark_secondary_moon">#62757f</color>
+    <color name="primary_moon_night">#78909c</color>
+    <color name="dark_primary_moon_night">#37474f</color>
+    <color name="secondary_moon">#a7c0cd</color>
+    <color name="dark_secondary_moon">#4b636e</color>
 
     <color name="primary_sun">#7b5e57</color>
     <color name="dark_primary_sun">#260e04</color>
-    <color name="primary_sun_night">#d3b8ae</color>
-    <color name="dark_primary_sun_night">#725b53</color>
+    <color name="primary_sun_night">#9e9e9e</color>
+    <color name="dark_primary_sun_night">#4e342e</color>
     <color name="secondary_sun">#cfcfcf</color>
     <color name="dark_secondary_sun">#707070</color>
 
