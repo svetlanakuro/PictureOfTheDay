@@ -10,4 +10,9 @@
     <string name="moon_theme">Moon Theme</string>
     <string name="sun_theme">Sun Theme</string>
 
+    <string name="earth_photo">Earth Photo</string>
+    <string name="earth_image">Earth Image</string>
+    <string name="geomagnetic_storm">Geomagnetic Storm</string>
+    <string name="geomagnetic_storm_description">Geomagnetic Storm for the last year:</string>
+
 </resources>

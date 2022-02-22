@@ -1,4 +1,4 @@
-package com.svetlanakuro.pictureoftheday.ui
+package com.svetlanakuro.pictureoftheday.ui.main
 
 import android.content.Context
 import android.os.Bundle
@@ -6,6 +6,7 @@ import android.view.*
 import android.widget.RadioGroup
 import androidx.fragment.app.Fragment
 import com.svetlanakuro.pictureoftheday.R
+import com.svetlanakuro.pictureoftheday.domain.AppThemePreferenceDelegate
 import org.jetbrains.annotations.NotNull
 
 class SettingsFragment : Fragment() {
@@ -41,16 +42,10 @@ class SettingsFragment : Fragment() {
         view.findViewById<View>(R.id.radio_button_moon_theme).setOnClickListener {
             appThemeSaved.setMoonTheme(context)
             requireActivity().recreate()
-            requireActivity().supportFragmentManager.beginTransaction()
-                .remove(this@SettingsFragment)
-                .commitAllowingStateLoss()
         }
         view.findViewById<View>(R.id.radio_button_sun_theme).setOnClickListener {
             appThemeSaved.setSunTheme(context)
             requireActivity().recreate()
-            requireActivity().supportFragmentManager.beginTransaction()
-                .remove(this@SettingsFragment)
-                .commitAllowingStateLoss()
         }
     }
 }
