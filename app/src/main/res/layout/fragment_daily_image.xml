@@ -1,20 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".ui.DailyImageFragment">
+    android:layout_height="match_parent">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
         <ImageView
-            android:id="@+id/image_view_daily_image"
+            android:id="@+id/daily_image_view"
             android:layout_width="0dp"
             android:layout_height="0dp"
-            android:layout_marginVertical="20dp"
+            android:layout_margin="20dp"
             android:contentDescription="@string/daily_image"
             android:scaleType="centerInside"
             app:layout_constraintDimensionRatio="H,1:1.2"
@@ -22,31 +20,10 @@
             app:layout_constraintRight_toRightOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
-        <com.google.android.material.textfield.TextInputLayout
-            android:id="@+id/input_layout_wiki"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_marginHorizontal="20dp"
-            android:hint="@string/search_wiki"
-            app:counterEnabled="true"
-            app:counterMaxLength="20"
-            app:endIconDrawable="@drawable/ic_search_wiki"
-            app:endIconMode="custom"
-            app:helperText="@string/wiki_helper_text"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/image_view_daily_image">
-
-            <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/input_edit_text_wiki"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:inputType="text" />
-
-        </com.google.android.material.textfield.TextInputLayout>
-
     </androidx.constraintlayout.widget.ConstraintLayout>
 
-    <include layout="@layout/bottom_sheet_layout" />
+    <include
+        android:id="@+id/bottom_sheet"
+        layout="@layout/bottom_sheet_daily_image_description" />
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="BottomSheet">
+        <item name="android:background">?colorSecondaryVariant</item>
+        <item name="layout_behavior">
+            com.google.android.material.bottomsheet.BottomSheetBehavior
+        </item>
+        <item name="behavior_hideable">true</item>
+    </style>
+
+    <style name="BottomNavigation">
+        <item name="itemTextColor">?colorOnBackground</item>
+        <item name="itemIconTint">?colorOnBackground</item>
+    </style>
+
+</resources>

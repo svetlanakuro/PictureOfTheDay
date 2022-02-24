@@ -1,4 +1,4 @@
-package com.svetlanakuro.pictureoftheday.ui
+package com.svetlanakuro.pictureoftheday.domain
 
 import android.content.Context
 import androidx.appcompat.app.AppCompatActivity

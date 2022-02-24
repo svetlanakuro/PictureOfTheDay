@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/daily_image_fragment_menu"
+        android:icon="@drawable/ic_image_photo_svgrepo_com"
+        android:title="@string/daily_image" />
+
+    <item
+        android:id="@+id/earth_photo_fragment_menu"
+        android:icon="@drawable/ic_earth_svgrepo_com"
+        android:title="@string/earth_photo" />
+
+    <item
+        android:id="@+id/geomagnetic_storm_fragment_menu"
+        android:icon="@drawable/ic_planet_svgrepo_com"
+        android:title="@string/geomagnetic_storm" />
+</menu>
