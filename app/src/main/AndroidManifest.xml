@@ -14,6 +14,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.PictureOfTheDay">
         <activity
+            android:name=".ui.favorites.NotesActivity"
+            android:exported="false" />
+        <activity
             android:name=".ui.main.MainActivity"
             android:exported="true">
             <intent-filter>

@@ -4,7 +4,7 @@ import com.svetlanakuro.pictureoftheday.data.entity.*
 import retrofit2.Call
 import retrofit2.http.*
 
-interface NasaApiService {
+interface NasaApiRequest {
 
     @GET("planetary/apod")
     fun getDailyImage(

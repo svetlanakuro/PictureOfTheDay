@@ -15,7 +15,7 @@ class NasaApiRetrofit : NasaDataLoader {
         Retrofit.Builder().baseUrl(BASE_URL).addConverterFactory(GsonConverterFactory.create()).build()
     }
 
-    private val api: NasaApiService by lazy { retrofit.create(NasaApiService::class.java) }
+    private val api: NasaApiRequest by lazy { retrofit.create(NasaApiRequest::class.java) }
 
     override fun loadDailyImage(callback: (DailyImageState) -> Unit) {
         val enqueueCallback = object : Callback<DailyImageResponse> {
