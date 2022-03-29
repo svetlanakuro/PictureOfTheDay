@@ -13,5 +13,7 @@
     <string name="earth_image">Earth Image</string>
     <string name="geomagnetic_storm">Geomagnetic Storm</string>
     <string name="geomagnetic_storm_description">Geomagnetic Storm for the last year:</string>
+    <string name="notes_and_tasks">Notes and Tasks</string>
+    <string name="add_note">Add Note</string>
 
 </resources>

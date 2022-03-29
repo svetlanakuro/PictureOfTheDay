@@ -1,5 +1,6 @@
 package com.svetlanakuro.pictureoftheday.ui.main
 
+import android.content.Intent
 import android.os.Bundle
 import android.view.*
 import androidx.activity.viewModels
@@ -11,6 +12,7 @@ import com.svetlanakuro.pictureoftheday.domain.*
 import com.svetlanakuro.pictureoftheday.ui.daily_image.DailyImageFragment
 import com.svetlanakuro.pictureoftheday.ui.earth_photo.EarthPhotoFragment
 import com.svetlanakuro.pictureoftheday.ui.gst.GstFragment
+import com.svetlanakuro.pictureoftheday.ui.favorites.NotesActivity
 
 class MainActivity : AppCompatActivity() {
 
@@ -67,6 +69,10 @@ class MainActivity : AppCompatActivity() {
 
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
         return when (item.itemId) {
+            R.id.notes -> {
+                startActivity(Intent(this, NotesActivity::class.java))
+                true
+            }
             R.id.choose_theme -> {
                 supportFragmentManager.commit {
                     replace<SettingsFragment>(R.id.main_fragment_container)
