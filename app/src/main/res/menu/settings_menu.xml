@@ -4,7 +4,7 @@
     <item
         android:id="@+id/notes"
         android:icon="@drawable/ic_baseline_notes_24"
-        android:title="@string/choose_theme"
+        android:title="@string/notes_and_tasks"
         app:showAsAction="ifRoom" />
     <item
         android:id="@+id/choose_theme"

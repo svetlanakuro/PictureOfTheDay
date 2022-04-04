@@ -1,6 +1,8 @@
 package com.svetlanakuro.pictureoftheday.ui.gst
 
 import android.os.Bundle
+import android.text.*
+import android.text.style.UnderlineSpan
 import android.view.*
 import androidx.fragment.app.*
 import com.svetlanakuro.pictureoftheday.R
@@ -22,6 +24,11 @@ class GstFragment : Fragment(R.layout.fragment_gst) {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+
+        val spannableText = SpannableStringBuilder(binding.gstListDescriptionTextView.text)
+        spannableText.setSpan(UnderlineSpan(), 18, 35, Spannable.SPAN_EXCLUSIVE_INCLUSIVE)
+        binding.gstListDescriptionTextView.text = spannableText
+
         viewModel.onViewCreated(requireActivity().application)
         viewModel.setGstDataLiveData.observe(viewLifecycleOwner) { gstList ->
             binding.gstListTextView.text = gstList
