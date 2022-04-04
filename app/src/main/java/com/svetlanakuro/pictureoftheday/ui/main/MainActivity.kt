@@ -11,8 +11,8 @@ import com.svetlanakuro.pictureoftheday.databinding.ActivityMainBinding
 import com.svetlanakuro.pictureoftheday.domain.*
 import com.svetlanakuro.pictureoftheday.ui.daily_image.DailyImageFragment
 import com.svetlanakuro.pictureoftheday.ui.earth_photo.EarthPhotoFragment
-import com.svetlanakuro.pictureoftheday.ui.gst.GstFragment
 import com.svetlanakuro.pictureoftheday.ui.favorites.NotesActivity
+import com.svetlanakuro.pictureoftheday.ui.gst.GstFragment
 
 class MainActivity : AppCompatActivity() {
 
@@ -21,10 +21,10 @@ class MainActivity : AppCompatActivity() {
     private val appThemePreference by lazy { AppThemePreferenceDelegate() }
 
     override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-        binding = ActivityMainBinding.inflate(layoutInflater)
         val savedTheme = appThemePreference.getSavedTheme(this)
         setTheme(appThemePreference.savedThemeToStyleId(savedTheme))
+        super.onCreate(savedInstanceState)
+        binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
         if (savedInstanceState == null) {

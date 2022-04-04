@@ -18,6 +18,7 @@
             android:exported="false" />
         <activity
             android:name=".ui.main.MainActivity"
+            android:theme="@style/Theme.PictureOfTheDay.Splash"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

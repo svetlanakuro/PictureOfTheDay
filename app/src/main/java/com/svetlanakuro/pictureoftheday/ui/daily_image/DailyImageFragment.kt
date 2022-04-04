@@ -29,6 +29,7 @@ class DailyImageFragment : Fragment(R.layout.fragment_daily_image_start) {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+        binding.dailyImageViewLoading.visibility = View.VISIBLE
         initViewModel()
         viewModel.onViewIsReady(requireActivity().application)
         binding.constraintContainer.setOnClickListener { if (show) hideComponents() else showComponents() }
@@ -41,6 +42,7 @@ class DailyImageFragment : Fragment(R.layout.fragment_daily_image_start) {
     }
 
     private fun renderImageData(dailyImage: DailyImageResponse) {
+        binding.dailyImageViewLoading.visibility = View.GONE
         val imageUrl = dailyImage.url
         Glide.with(requireContext()).load(imageUrl).into(binding.dailyImageView)
         binding.title.text = dailyImage.title
